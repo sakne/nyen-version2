@@ -4,7 +4,9 @@ const client = new Discord.Client()
 const config = require('../../config.json')
 const command = require('../../command')
 
-command(client, 'status', (message) => {
+
+if (message.member.hasPermission('ADMINISTRATOR', 'MANAGE_NICKNAMES', 'BAN_MEMBERS')) {
+  command(client, 'status', (message) => {
     const content = message.content.replace('*status ', '')
     // "!status hello world" -> "hello world"
 
@@ -15,5 +17,7 @@ command(client, 'status', (message) => {
       },
     })
   })
+}
+
 
   client.login(config.token)
