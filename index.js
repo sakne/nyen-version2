@@ -12,7 +12,7 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity("Komutlar için *yardım ", {type: "STREAMING"});
+    client.user.setActivity("Komutlar için *yardım ", {type: "LISTENING"});
 })
 
 
