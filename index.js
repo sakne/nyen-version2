@@ -12,9 +12,7 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    var guild = client.guilds.cache.array();
-    var onlineCount = guild.members.cache.filter(m => m.presence.status === 'online').size
-      client.user.setActivity('Toplam ' + onlineCount + ' kişiye hizmet ediyor.' , { type: 'WATCHING' });
+    client.user.setActivity(`${formatNumber(client.guilds.cache.size)} servers`, {type: "STREAMING"});
 })
 
 
