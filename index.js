@@ -12,8 +12,8 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    var guild = client.guild.fetch();
-    var onlineCount = guild.members.fetch(m => m.presence.status === 'online').size
+    var guild = client.guilds.cache.array();
+    var onlineCount = guild.members.cache.filter(m => m.presence.status === 'online').size
       client.user.setActivity('Toplam ' + onlineCount + ' kişiye hizmet ediyor.' , { type: 'WATCHING' });
 })
 
