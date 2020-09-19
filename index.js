@@ -12,7 +12,9 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity("Komutlar için *yardım ", {type: "LISTENING"});
+    var guild = client.guilds.cache.get('742689474802090014');
+    var onlineCount = guild.members.cache.filter(m => m.presence.status === 'online').size
+      client.user.setActivity('games with ' + onlineCount + ' people' , { type: 'PLAYING' });
 })
 
 
