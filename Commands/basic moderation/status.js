@@ -17,6 +17,10 @@ command(client, 'status', (message) => {
       }
     })
   }
+    
+      })
+
+  
       
        
 
