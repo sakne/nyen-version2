@@ -7,7 +7,7 @@ const command = require('../../command')
 command(client, 'serverinfo', (message) => {
   const { guild } = message
 
-  const { name, region, memberCount, owner, afkTimeout } = guild
+  const { name, region, memberCount, owner, afkTimeout, roles } = guild
   const icon = guild.iconURL()
 
   const embed = new Discord.MessageEmbed()
@@ -29,6 +29,12 @@ command(client, 'serverinfo', (message) => {
       {
         name: 'AFK Süresi (dakika)',
         value: afkTimeout / 60,
+      }, 
+      {
+        name: 'Rol sayısı',
+        value: guild.roles.cache.size -1,
+
+
       }
     )
 

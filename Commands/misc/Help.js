@@ -45,6 +45,16 @@ command (client, 'yardım', (message => {
       name: '**çekiliş komutu** -> belirli bir çekiliş başlatır (Adminler için)',
       value: '**Kullanım:** *çekiliş-başlat + #kanal + m,h,d olarak sayı (konulmazsa saniye olur) + kazanan sayısı + ödül',
       inline: false
+    }, 
+    {
+      name: '**bot bilgileri komutu** -> Bot hakkında bilgileri gösterir.',
+      value: '**Kullanım:** *botinfo',
+
+    }, 
+    {
+      name: '**Kullanıcı bilgileri komutu** -> Kullanıcı hakkında bazı bilgiler gösterir',
+      value: '**Kullanım:** *kbilgi yada *kbilgi @kullanıcı'
+
     })
 
     message.channel.send(embed)
