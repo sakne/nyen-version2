@@ -27,11 +27,6 @@ command (client, 'yardım', (message => {
       inline: false
     }, 
     {
-      name: '**status** -> botun oynadığı oyunu değiştirir. (Adminler için)',
-      value: '**Kullanım:** *status + yazılacak kelime',
-      inline: false
-    }, 
-    {
       name: '**memes** -> reddit üzerinden meme gönderir.',
       value: '**Kullanım:** *shitpost',
       inline: false
