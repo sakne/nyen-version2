@@ -3,7 +3,7 @@ const client = new Discord.Client()
 
 const config = require('./config.json')
 const command = require('./command')
-const yardım = require('./commands/misc/Help.js')
+const yardım = require('./Commands/misc/Help.js')
 const memes = require('./commands/fun/memes.js')
 const cc = require('./commands/basic moderation/clearchannel.js')
 const server = require('./commands/basic moderation/server.js')
