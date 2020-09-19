@@ -5,19 +5,19 @@ const config = require('../../config.json')
 const command = require('../../command')
 
 
-if (message.member.hasPermission('ADMINISTRATOR', 'MANAGE_NICKNAMES', 'BAN_MEMBERS')) {
-  command(client, 'status', (message) => {
+
+command(client, 'status', (message) => {
+  if(message.member.hasPermission('ADMINISTRATOR')) {
     const content = message.content.replace('*status ', '')
-    // "!status hello world" -> "hello world"
 
     client.user.setPresence({
       activity: {
         name: content,
         type: 0,
-      },
+      }
     })
-  })
-}
-
+  }
+      
+       
 
   client.login(config.token)
