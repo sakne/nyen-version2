@@ -12,7 +12,8 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity("HOW TO MAKE A BOT FULL HD DOWNLOAD ", {type: "WATCHING"});
+    client.user.setActivity("Komutlar için *yardım ", {type: "WATCHING"});
+    client.user.setStatus('dnd');
 })
 
 
