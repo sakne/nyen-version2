@@ -12,7 +12,7 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity(`${client.member.cache.size} servers`, {type: "STREAMING"});
+    client.user.setActivity(`${client.users.cache.size} servers`, {type: "STREAMING"});
 })
 
 
