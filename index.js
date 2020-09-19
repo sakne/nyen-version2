@@ -12,7 +12,7 @@ const customanswers = require('./Commands/misc/custom-answers.js')
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity(`**${client.guilds.cache.size}** serverdeki **${client.users.cache.size}** kullanıcıya hizmet ediyor`, {type: "LISTENING"});
+    client.user.setActivity(`${client.guilds.cache.size}🌐 serverdeki ,${client.users.cache.size}👤 kullanıcıya hizmet ediyor`, {type: "LISTENING"});
 })
 
 
