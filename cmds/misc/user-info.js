@@ -12,36 +12,81 @@ module.exports = class UserInfoCommand extends Commando.Command {
     }
 
     run = async (message) => {
+
+
         const { guild, channel } = message
+        
 
         const user = message.mentions.users.first() || message.member.user
         const member = guild.members.cache.get(user.id)
 
+        let status;
+        switch (user.presence.status) {
+            case "online":
+                status = "🟢 Çevrimiçi";
+                break;
+            case "dnd":
+                status = "⛔ Rahatsız Etmeyin";
+                break;
+            case "idle":
+                status = "🌙 Boşta";
+                break;
+            case "offline":
+                status = "⚫ Çevrimdışı";
+                break;
+        }
+
         const embed = new MessageEmbed()
-         .setAuthor(`${user.username} hakkında kullanıcı bilgiler...`, 
-         user.displayAvatarURL()
+        .setColor('#EDDD2B')
+        .setFooter('Build-in Progress')
+         .setThumbnail(user.displayAvatarURL())
+         .setTitle(`${user.username} hakkında kullanıcı bilgiler...`
          ).addFields({
-             name: 'Kullanıcı Etiketi',
-             value: user.tag
+             name: 'Kullanıcı İsmi',
+             value: user.username
          }, 
          {
-             name: 'Bot mu?',
+             name: '#️⃣ Kullanıcı Etiketi',
+             value: user.discriminator,
+
+         },
+         {
+             name: 'Bot mu',
              value: user.bot
 
          }, 
          {
-             name: 'Nickname',
-             value: member.nickname || 'Yok'
+             name: 'Serverdeki İsmi',
+             value: member.nickname || 'Değiştirilmemiş'
 
          }, 
          {
-             name: 'Servere Katıldığı Tarih',
+             name: '📆 Servere Katıldığı Tarih',
              value: new Date(member.joinedTimestamp).toLocaleDateString(),
+             inline: true
 
          },
          {
-             name: 'Discorda katıldığı tarih',
+             name: '📆 Discorda Katıldığı Tarih',
              value: new Date(user.createdTimestamp).toLocaleDateString(),
+             inline: true
+
+         }, 
+         {
+             name: 'Şu Anki Durumu',
+             value: status,
+             inline: true
+
+         }, 
+         {
+             name: 'Aktivite',
+             value: user.presence.activities[0] ? user.presence.activities[0].name : `Kullanıcı herhangi bir oyun oynamıyor!`,
+             inline: true
+
+         },
+         {
+             name: 'Avatar Linki (Gif Olmayan)',
+             value: `[Buraya Tıklayın](${user.displayAvatarURL()})`
 
          })
 

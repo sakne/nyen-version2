@@ -5,10 +5,7 @@ const Commando = require('discord.js-commando')
 
 const config = require('./config.json')
 const command = require('./command')
-const yardım = require('./Commands/misc/Help.js')
-const memes = require('./Commands/fun/memes.js')
 const cc = require('./Commands/basic moderation/clearchannel.js')
-const server = require('./Commands/basic moderation/server.js')
 const customanswers = require('./Commands/misc/custom-answers.js')
 
 const client = new Commando.CommandoClient ({
@@ -28,7 +25,8 @@ client.on('ready', () => {
     .registerGroups([
         ['basic moderation', 'basic moderation commands'],
         ['misc', 'misc commands'],
-        ['fun', 'fun commands']
+        ['fun', 'fun commands'],
+        ['games', 'Commands to handle games']
     ])
     .registerDefaultTypes()
     .registerDefaultGroups()
