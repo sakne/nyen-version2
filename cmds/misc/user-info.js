@@ -77,7 +77,7 @@ module.exports = class UserInfoCommand extends Commando.Command {
              value: status,
              inline: true
 
-         }, 
+         },
          {
              name: 'Aktivite',
              value: user.presence.activities[0] ? user.presence.activities[0].name : `Kullanıcı herhangi bir oyun oynamıyor!`,

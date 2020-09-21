@@ -25,16 +25,18 @@ module.exports = class ServerInfoCommand extends Commando.Command {
     .setColor('#EDDD2B')
     .addFields(
       {
-        name: 'Bölge',
+        name: '🌐 Bölge',
         value: region,
       },
       {
-        name: 'Kullanıcı Sayısı',
+        name: '👥 Kullanıcı Sayısı',
         value: memberCount,
+        inline: true,
       },
       {
         name: 'Server Sahibi',
         value: owner.user.tag,
+        inline: true,
       },
       {
         name: 'AFK Odasına Atılma Süresi (dakika)',

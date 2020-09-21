@@ -33,8 +33,10 @@ module.exports = class MemeCommand extends Commando.Command {
 
      let cevap = cevaplar[Math.floor(Math.random() * cevaplar.length )];
 
+     const user = message.mentions.users.first() || message.member.user
+
      let embed = new MessageEmbed()
-     .setAuthor(`${message.author.username} adlı kişinin pee pee uzunluğu`) 
+     .setAuthor(`${user.username} adlı kişinin pee pee uzunluğu`) 
      .setColor(`RANDOM`)
      .setDescription(cevap)
 

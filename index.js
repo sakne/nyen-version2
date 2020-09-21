@@ -27,7 +27,8 @@ client.on('ready', () => {
         ['misc', 'misc commands'],
         ['fun', 'fun commands'],
         ['games', 'Commands to handle games'],
-        ['döviz', 'Döviz commands']
+        ['döviz', 'Döviz commands'],
+        ['berat albayrak', 'Ekonomi komutları']
     ])
     .registerDefaultTypes()
     .registerDefaultGroups()
