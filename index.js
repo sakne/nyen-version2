@@ -26,7 +26,8 @@ client.on('ready', () => {
         ['basic moderation', 'basic moderation commands'],
         ['misc', 'misc commands'],
         ['fun', 'fun commands'],
-        ['games', 'Commands to handle games']
+        ['games', 'Commands to handle games'],
+        ['döviz', 'Döviz commands']
     ])
     .registerDefaultTypes()
     .registerDefaultGroups()
@@ -36,6 +37,7 @@ client.on('ready', () => {
     })
     .registerCommandsIn(path.join(__dirname, 'cmds'))
 })
+
 
 
 client.login(config.token)
