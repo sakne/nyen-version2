@@ -56,10 +56,10 @@ const prefix = '*';
 
 
 
-const commandFiles = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith(".js")); //commands klasörü içindeki js ile biten dosyalarda çalışıyor.
+const commandFiles = readdirSync(join(__dirname, "Commands")).filter(file => file.endsWith(".js")); //commands klasörü içindeki js ile biten dosyalarda çalışıyor.
 
 for (const file of commandFiles) {
-    const command = require(join(__dirname, "commands", `${file}`));
+    const command = require(join(__dirname, "Commands", `${file}`));
     client.commands.set(command.name, command);
 }
 
