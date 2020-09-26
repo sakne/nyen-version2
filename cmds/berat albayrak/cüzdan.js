@@ -24,9 +24,8 @@ module.exports = class BotInfoCommand extends Commando.Command {
         let embed = new MessageEmbed()
         .setTitle(`${user.username} Adlı kişinin cüzdanı...`) 
         .setColor('#EDDD2B')
-        .setThumbnail(erkek)
         .addFields({
-            name: 'Cüzdanındaki mevcut -> Cc| AllahDinarı |cC\n',
+            name: 'Cüzdanındaki mevcut ADinar...\n',
             value: `${bal} Allah Dinarı.`
         })
 

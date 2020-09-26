@@ -15,7 +15,7 @@ module.exports = class BotInfoCommand extends Commando.Command {
 
     run = async (message) => {
 
-        const numbers = Math.floor(Math.random() * 1500) + 20
+        const numbers = Math.floor(Math.random() * 45000) + 1500
 
        let user = message.author;
         let timeout = 21600000;
@@ -38,7 +38,7 @@ module.exports = class BotInfoCommand extends Commando.Command {
 
             let embed = new MessageEmbed()
         .setTitle(`BAŞARILI !!`) 
-        .setColor('#EDDD2B')
+        .setColor('#00FF04')
         .setDescription(`Başarılı bir şekilde **${amount} Allah Dinarı** miktarında vergi topladın !!`)
 
         message.channel.send(embed)
