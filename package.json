@@ -1,6 +1,6 @@
 {
   "name": "nyen-v2",
-  "version": "0.0.9",
+  "version": "0.0.93",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "discord.js": "^12.3.1",
     "discord.js-commando": "git+https://github.com/discordjs/commando.git",
     "parse-ms": "^2.1.0",
-    "quick.db": "^7.1.2",
+    "quick.db": "^7.0.0-b21",
     "request": "^2.88.2",
     "something-random-on-discord": "0.0.2",
     "tcmb-doviz": "^1.0.6"

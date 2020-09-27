@@ -4,9 +4,9 @@ const Commando = require('discord.js-commando')
 module.exports = class GameInfoCommand extends Commando.Command {
     constructor(client) {
         super(client, {
-            name: 'oyardım',
+            name: 'yardım 2',
             group: 'misc',
-            memberName: 'oyardım',
+            memberName: 'yardım 2',
             description: 'Oyun komutları hakkında bilgi gösterir'
         })
     }

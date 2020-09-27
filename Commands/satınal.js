@@ -8,10 +8,16 @@ module.exports = {
 
     async run (client, message, args) {
         let purchase = args.join(" ");
-        if(!purchase) return message.channel.send('Please provide an item to buy')
+        if(!purchase) return message.channel.send('Satınalmak için birşey seçin. *pazar dan görebilirsiniz.')
         let items = await db.fetch(message.author.id, { items: [] });
         let amount = await db.fetch(`money_${message.guild.id}_${message.author.id}`)
 
+
+
+
+
+
+                                       //ARABALAR
         if(purchase === 'tofas'){
             if(amount < 1500) return message.channel.send('Bunu satın almak için yeterli paran yok.');
             db.subtract(`money_${message.guild.id}_${message.author.id}`, 1500);
