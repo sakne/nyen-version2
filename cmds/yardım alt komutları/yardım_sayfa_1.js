@@ -7,7 +7,7 @@ module.exports = class InfoCommand extends Commando.Command {
     constructor(client) {
         super(client, {
             name: 'yardım',
-            group: 'misc',
+            group: 'yardım alt komutları',
             memberName: 'yardım',
             description: 'Nyen botunun komutlarını gösterir.'
         })
