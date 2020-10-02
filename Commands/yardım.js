@@ -62,7 +62,7 @@ module.exports = {
             name: ' `*hyazma`',
             value: 'Hızlı yazma oyunu başlatır. Gösterilen metini en hızlı yazan puan alır. En çok puanı alan süre bitince açıklanır.'
         })
-        const doviz = new Discord.MessageEmbed()
+        const ekonomi = new Discord.MessageEmbed()
         .setTitle('Ekonomi\n⠀⠀⠀ \n')
         .setThumbnail(logo)
         .setTimestamp()
@@ -107,7 +107,8 @@ module.exports = {
         const pages = [
                 ana,
                 doviz,
-                oyunlar
+                oyunlar,
+                ekonomi,
         ]
 
         const emojiList = ["⏪", "⏩"];
