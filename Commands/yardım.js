@@ -101,7 +101,6 @@ module.exports = {
         {
             name: ' `*varlıklar`',
             value: 'Sahip olduğun eşyaları gösterir.\n⠀⠀⠀ \n',
-            inline: true
         })
 
         const pages = [
