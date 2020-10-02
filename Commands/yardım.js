@@ -9,9 +9,9 @@ module.exports = {
     async run (client, message, args){
 
         const ana = new Discord.MessageEmbed()
-        .setTitle('Ana Sayfa\n⠀⠀⠀ \n')
+        .setTitle('Ana Sayfa')
         .setAuthor(message.author.username, message.author.displayAvatarURL())
-        .setDescription('Botun sahip olduğu ana komutları öğrenmek için aşağıdaki rehberi takip edin.') 
+        .setDescription('Botun sahip olduğu ana komutları öğrenmek için aşağıdaki rehberi takip edin.\n⠀⠀⠀ \n') 
         .setThumbnail(logo)
         .setTimestamp() 
         .setFooter('Version 0.0.94', logo)
