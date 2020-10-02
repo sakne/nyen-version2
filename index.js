@@ -5,8 +5,8 @@ const Commando = require('discord.js-commando')
 
 const config = require('./config.json')
 const command = require('./command')
-const cc = require('./Commands/basic moderation/clearchannel.js')
-const customanswers = require('./Commands/misc/custom-answers.js')
+const cc = require('./Commands/clearchannel.js')
+const customanswers = require('./Commands/custom-answers.js')
 
 const client = new Commando.CommandoClient ({
     owner: '293313025174274049',
