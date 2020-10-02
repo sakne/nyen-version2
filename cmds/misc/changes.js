@@ -19,8 +19,8 @@ module.exports = class GameInfoCommand extends Commando.Command {
         .setThumbnail(this.client.user.displayAvatarURL())
         .setFooter('*yardım komut bilgileri için. (Build-in Progress)')
         .addFields({
-            name: 'Mini Güncelleme Versionu -> __**0.0.93**__',
-            value: '⠀⠀⠀ \n _**YENİ KOMUTLAR**_ \n ▬ Leaderboard Komutu eklendi.\n ⠀⠀⠀\n _**BUG FİXLERİ**_ \n ▬ Araba alırken 2 kez satın alma düzeltildi.\n ⠀⠀⠀ \n _**GÖRÜNÜŞ YÜKSELTMELERİ**_ \n ▬ yok. \n ⠀⠀⠀ \n–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––\n ⠀⠀⠀ \n'
+            name: 'Mini Güncelleme Versionu -> __**0.0.95**__',
+            value: '⠀⠀⠀ \n _**YENİ KOMUTLAR**_ \n ▬ Leaderboard Komutu eklendi.\n ⠀⠀⠀\n _**BUG FİXLERİ**_ \n ▬ Araba alırken 2 kez satın alma düzeltildi.\n ⠀⠀⠀ \n _**GÖRÜNÜŞ YÜKSELTMELERİ**_ \n ▬ Updates kısmı geliştirildi. Hepsi tek komuta düşürüldü. \n ⠀⠀⠀ \n–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––\n ⠀⠀⠀ \n'
         },
         {
             name: 'Güncelleme Versionu -> __**0.0.9**__',
