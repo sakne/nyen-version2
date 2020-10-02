@@ -18,15 +18,15 @@ module.exports = {
         .setColor('#FFE40B')
         .addFields({
             name: ' `*updates`',
-            value: 'Botun update notlarını gösterir.'
+            value: 'Botun update notlarını gösterir.\n'
         }, 
         {
             name: ' `*botinfo`',
-            value: 'Botun bilgilerini gösterir.'
+            value: 'Botun bilgilerini gösterir.\n'
         }, 
         {
             name: '`Botun durumu...`',
-            value: 'Pre-Beta Test'
+            value: 'Pre-Beta Test\n⠀⠀⠀ \n'
         })
 
         const doviz = new Discord.MessageEmbed()
@@ -49,7 +49,7 @@ module.exports = {
         }, 
         {
             name: ' `*ruble`',
-            value: 'O anki yada 1 gün önceki **ruble** kurunu gösterir. Merkez bankasının güncellenmesine bağlıdır.\n'
+            value: 'O anki yada 1 gün önceki **ruble** kurunu gösterir. Merkez bankasının güncellenmesine bağlıdır.\n⠀⠀⠀ \n'
         })
 
         const oyunlar = new Discord.MessageEmbed()
@@ -60,7 +60,7 @@ module.exports = {
         .setColor('#EDDD2B')
         .addFields({
             name: ' `*hyazma`',
-            value: 'Hızlı yazma oyunu başlatır. Gösterilen metini en hızlı yazan puan alır. En çok puanı alan süre bitince açıklanır.'
+            value: 'Hızlı yazma oyunu başlatır. Gösterilen metini en hızlı yazan puan alır. En çok puanı alan süre bitince açıklanır.\n⠀⠀⠀ \n'
         })
         const ekonomi = new Discord.MessageEmbed()
         .setTitle('Ekonomi\n⠀⠀⠀ \n')
@@ -70,37 +70,37 @@ module.exports = {
         .setColor('#EDDD2B')
         .addFields({
             name: ' `*cüzdan`',
-            value: 'Sahip olduğun ADinarı miktarını gösterir.',
+            value: 'Sahip olduğun ADinarı miktarını gösterir.\n',
             inline: true
         }, 
         {
             name: ' `*çalış`',
-            value: 'Her 10 dakikada bir **2.500** ile arasında **1** arasında Adinarı verir.',
+            value: 'Her 10 dakikada bir **2.500** ile arasında **1** arasında Adinarı verir.\n',
             inline: true
         }, 
         {
             name: ' `*vergiler`',
-            value: 'Her 6 saate bir **25.000** ile arasında **1.500** Adinarı verir.',
+            value: 'Her 6 saate bir **25.000** ile arasında **1.500** Adinarı verir.\n',
             inline: true
         }, 
         {
             name: ' `*pazar`',
-            value: 'Adinarı ile satın alabileceğin şeyleri gösterir.',
+            value: 'Adinarı ile satın alabileceğin şeyleri gösterir.\n',
             inline: true
         }, 
         {
             name: ' `*zenginler`',
-            value: 'Serverde en çok ADinarı bulunanları gösterir.',
+            value: 'Serverde en çok ADinarı bulunanları gösterir.\n',
             inline: true
         }, 
         {
-            name: ' `*satınal (eşya)',
-            value: 'Pazarda gözüken eşyaları satınalmak için kullanılır. Eşya kısmına parantez olmadan kullanımı yazılır.',
+            name: ' `*satınal (eşya)`',
+            value: 'Pazarda gözüken eşyaları satınalmak için kullanılır. Eşya kısmına parantez olmadan kullanımı yazılır.\n',
             inline: true
         }, 
         {
             name: ' `*varlıklar`',
-            value: 'Sahip olduğun eşyaları gösterir.',
+            value: 'Sahip olduğun eşyaları gösterir.\n⠀⠀⠀ \n',
             inline: true
         })
 
