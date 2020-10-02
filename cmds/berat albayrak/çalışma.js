@@ -7,9 +7,9 @@ const Commando = require('discord.js-commando')
 module.exports = class BotInfoCommand extends Commando.Command {
     constructor(client) {
         super(client, {
-            name: 'vergikaçır',
+            name: 'çalış',
             group: 'berat albayrak',
-            memberName: 'vergikaçır',
+            memberName: 'çalış',
             description: 'Vergi kaçırırsın.'
         })
     }
