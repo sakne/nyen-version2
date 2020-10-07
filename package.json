@@ -16,6 +16,7 @@
     "quick.db": "^7.0.0-b21",
     "request": "^2.88.2",
     "something-random-on-discord": "0.0.2",
-    "tcmb-doviz": "^1.0.6"
+    "tcmb-doviz": "^1.0.6",
+    "trev": "^2.0.8"
   }
 }
