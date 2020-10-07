@@ -7,6 +7,12 @@ const config = require('./config.json')
 const command = require('./command')
 const cc = require('./Commands/clearchannel.js')
 const customanswers = require('./Commands/custom-answers.js')
+const nsfw = require('./Commands/nsfw/generalp.js')
+const nsfw2 = require('./Commands/nsfw/hentai.js')
+const nsfw3 = require('./Commands/nsfw/japanse.js')
+const nsfw4= require('./Commands/nsfw/vgame.js')
+const nsfw5 = require('./Commands/nsfw/video.js')
+
 
 const client = new Commando.CommandoClient ({
     owner: '293313025174274049',
