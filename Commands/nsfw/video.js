@@ -22,7 +22,7 @@ async function main() {
             .setAuthor('Bu Kanalda | NSFW | Açık Değil!')
             .setDescription('Kanal Ayarlarında Şu Şekilde Açabilirsin.')
             .setImage('https://i.imgur.com/oe4iK5i.gif')
-            .setColor(`RED`)
+            .setColor(`#FF0000`)
             message.channel.send(embed);
         }
     }
